@@ -1,0 +1,87 @@
+{
+  "intents": [
+    {
+      "intent": "StartIntent"
+    },
+    {
+      "intent": "SenatorLookupIntent",
+      "slots":[
+        {
+          "name": "State",
+          "type": "LIST_OF_STATES"
+        }
+      ]
+    },
+    {
+      "intent": "RepresentativeLookupIntent",
+      "slots":[
+        {
+          "name": "State",
+          "type": "LIST_OF_STATES"
+        },
+        {
+          "name": "District",
+          "type": "LIST_OF_DISTRICTS"
+        }
+      ]
+    },
+    {
+      "intent": "RepresentativeLookupByNameIntent",
+      "slots":[
+        {
+          "name": "Name",
+          "type": "LIST_OF_REP_NAMES"
+        }
+      ]
+    },
+    {
+      "intent": "MoreInfoIntent",
+      "slots":[
+        {
+          "name": "Name",
+          "type": "LIST_OF_REP_NAMES"
+        }
+      ]
+    },
+    {
+      "intent": "CompareVotingRecordsIntent",
+      "slots":[
+        {
+          "name": "NameA",
+          "type": "LIST_OF_REP_NAMES"
+        },
+        {
+          "name": "NameB",
+          "type": "LIST_OF_REP_NAMES"
+        }
+      ]
+    },
+    {
+      "intent": "RecentBillsIntent",
+      "slots":[
+        {
+          "name": "Name",
+          "type": "LIST_OF_REP_NAMES"
+        }
+      ]
+    },
+    {
+      "intent": "VoterIntent",
+      "slots":[
+        {
+          "name": "State",
+          "type": "LIST_OF_STATES"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
